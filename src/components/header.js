@@ -5,8 +5,9 @@ const Header = (title, date, temp) => {
   const h1 = document.createElement("h1");
 
   div.appendChild(dateSpan);
-  div.appendChild(tempSpan);
   div.appendChild(h1);
+  div.appendChild(tempSpan);
+  
 
   div.classList.add("header");
   dateSpan.classList.add("date");
@@ -33,7 +34,7 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
   const header = document.querySelector(selector);
-  header.appendChild(Header("This is a header", "6/13/2021", "-20"))
+  header.appendChild(Header("This is a header", "6/13/2021", "-20 Degrees"))
  
  
  
